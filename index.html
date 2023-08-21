@@ -10,7 +10,7 @@
     <div id="blue-panel"><!--Blue panel at top-->
 
         <div class="header"> <!--Top of header -->
-            <div><img>Header Logo</div>
+            <div id="header-logo">Header Logo</div>
             <div style="flex-basis: 100%;"></div>
             <ul>
                 <li>Header Link One</li>
@@ -22,8 +22,8 @@
 
         <div id="blue-panel-content"><!--Content in blue panel-->
             <div id="blue-text">
-                <h1>This website is awesome</h1>
-                <p>
+                <h1 class="hero-text">This website is awesome</h1>
+                <p class="hero-secondary-text">
                     This website has some subtet that goes header
                     under the main title. It's a smaller font and the 
                     color is lower contrast
@@ -39,7 +39,7 @@
 
 
     <div id="white-panel-content"> <!-- Second Panel - White -->
-        <h3>Some random information</h3>
+        <p id="white-panel-title">Some random information</p>
 
         <div id="white-panel-pictures"> <!-- Wrapper div to hold the four image/description divs-->
             <div>
@@ -89,14 +89,15 @@
         </div>
     </div> <!-- Third Panel - Grey -->
 
-    <div> <!--Footer - White-->
-        <div><!-- Footer Panel- Blue-->
-            <p>
+    <div id="footer-panel"> <!--Footer - White-->
+        <div id="blue-footer-panel"><!-- Footer Panel- Blue-->
+            <p style="flex-grow: 1";>
                 <span>Call to action! It's Time!</span>
+                <br>
                 Sign up for our product by clicking that button
                 over there!
             </p>
-            <button>Sign Up</button>
+            <button id="bottom-button">Sign Up</button>
         </div>
     </div>
 

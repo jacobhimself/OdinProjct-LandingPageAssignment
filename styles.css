@@ -16,6 +16,7 @@ body{
     align-items: center;
     padding-left: 15%;
     padding-right: 15%;
+    background-color: #1F2937;
 }
 
 .header{
@@ -38,13 +39,33 @@ ul{
 
     display: flex;
     justify-content: space-between;
-    
+}
 
+.hero-text{
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+}
+
+.hero-secondary-text{
+    font-size: 18px;
+    color: #F9FAF8;
+}
+
+.header ul li{
+    font-size: 18px;
+    color: #F9FAF8;
+}
+
+#header-logo{
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 #top-image{
     max-width: 500px;
     width: 55%;
+    min-width: 300px;
 }
 
 #blue-text{
@@ -69,7 +90,9 @@ ul{
 #white-panel-pictures{
     display: flex;
     justify-content: space-evenly;
+    gap: 10px;
     width: 80%;
+    flex-wrap: wrap;
 }
 
 #white-panel-content div div{
@@ -90,9 +113,16 @@ ul{
 
 }
 
+#white-panel-title{
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1F2937;
+}
+
+
 /* GREY PANEL STYLES  */
 #grey-panel{
-    background-color: grey;
+    background-color: #E5E7EB;
     display: flex;
     justify-content: center;
     padding-top:30px;
@@ -101,17 +131,42 @@ ul{
 
 .grey-panel-content{
     display: flex;
-    width:50%;
+    width:60%;
     flex-direction: column;
-    background-color: green;
 }
 
 .thor-quote{
-    font-size: xx-large;
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1F2937;
 }
 
 .thor{
     font-size:x-large;
     align-self: flex-end;
+}
+
+
+/* FOOTER PANEL STYLES */
+#footer-panel{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#blue-footer-panel{
+    background-color: #3882F6;
+    width: 70%;
+    display: flex;
+    padding: 25px;
+}
+
+#bottom-button{
+    background-color: #3882F6;
+    border: 1px white solid;
+    color: white;
+    padding: 5px;
 }
 
