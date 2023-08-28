@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    /* border: 1px red dotted; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,18 +21,29 @@ body{
 
 .header{
     display: flex;
-    margin: 10px 0 0 0;
+    margin-top: 10px;
     width: 100%;
-    border: 2px blue solid;
 }
 
-ul{
+#header-logo{
+    font-size: 24px;
+    color: #F9FAF8;
+    min-width: 150px;
+    flex-basis: 100%;
+    font-weight: bold;
+}
+
+#header-links{
     list-style: none;
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
 }
 
+#header-links li{
+    font-size: 18px;
+    color: #F9FAF8;
+}
 
 #blue-panel-content{
     display: flex;
@@ -65,40 +75,18 @@ ul{
     box-sizing: border-box;
 }
 
-.header ul li{
-    font-size: 18px;
-    color: #F9FAF8;
-}
-
-#header-logo{
-    font-size: 24px;
-    color: #F9FAF8;
-    min-width: 150px;
-}
-
-#top-image-container{
-    max-width: 700px;
-    min-width: 400px;
-    flex: 4;
-    text-align: center;
-}
-
-#top-image{
-    max-width: 100%;
-}
-
-#blue-text{
+#blue-panel-text{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#blue-text h1{
+#blue-panel-text h1{
     font-size: 50px;
     text-align: center;
 }
 
-#top-button{
+#sign-up-button-top{
     background-color: #3882F6;
     color: white;
     padding: 5px;
@@ -110,6 +98,18 @@ ul{
     margin-top: 5px;
 }
 
+#blue-panel-image-container{
+    max-width: 700px;
+    min-width: 400px;
+    flex: 4;
+    text-align: center;
+}
+
+#blue-panel-image-container img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
 /* *************** WHITE PANEL STYLES ****************/
 #white-panel-content{
     display: flex;
@@ -117,6 +117,13 @@ ul{
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;;
+}
+
+#white-panel-title{
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1F2937;
+    margin-bottom: 30px;
 }
 
 #white-panel-pictures{
@@ -127,15 +134,14 @@ ul{
     flex-wrap: wrap;
 }
 
-#white-panel-content div div{
+#white-panel-pictures div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 /* PICTURE SIZES */
-#white-panel-content div img{
+#white-panel-pictures div img{
     width: 100px;
     border: 2px #3882F6 solid;
     border-radius: 5px;
@@ -145,14 +151,8 @@ ul{
     text-align: center;
     width: 100px;
     white-space: normal;
-
 }
 
-#white-panel-title{
-    font-size: 36px;
-    font-weight: extra-bold;
-    color: #1F2937;
-}
 
 
 /* *************** GREY PANEL STYLES ***************  */
@@ -185,13 +185,10 @@ ul{
 
 /* *************** FOOTER PANEL STYLES *************** */
 #footer-panel{
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 25px;
+    margin: 50px 15% 50px 15%;
 }
 
 #blue-footer-panel{
@@ -200,14 +197,20 @@ ul{
     box-sizing: border-box;
     display: flex;
     flex-grow: 1;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 25px;
+    border-radius: 10px;
 }
 
-#blue-footer-panel p{
+#blue-panel-text{
     color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    flex-basis: 100%;
+}
+
+#call-to-action{
+    color: #E5E7EB;
 }
 
 #bottom-button{
@@ -215,6 +218,11 @@ ul{
     border: 1px white solid;
     color: white;
     padding: 5px;
+    min-width: 80px;
+    border-radius: 10px;
+    border-color: #F9FAF8;
+    max-height: 30px;
+    align-self: center;
 }
 
 
