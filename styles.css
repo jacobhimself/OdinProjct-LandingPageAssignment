@@ -10,7 +10,7 @@ body{
     flex-direction: column;
 }
 
-/* TOP PANEL STYLES */
+/* *************** TOP PANEL STYLES *************** */
 #blue-panel{
     display: flex;
     flex-direction: column;
@@ -34,28 +34,35 @@ ul{
     gap: 10px;
 }
 
-.header ul li{
-    /* white-space: nowrap;   */
-}
 
 #blue-panel-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    flex-wrap: wrap-reverse;
+
 }
 
 .hero-text{
     font-size: 48px;
     font-weight: extra-bold;
     color: #F9FAF8;
-    /* word-wrap:; */
+    max-width: 620px;
+
 }
 
 .hero-secondary-text{
     font-size: 18px;
     color: #F9FAF8;
+    max-width: 620px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .header ul li{
@@ -69,24 +76,41 @@ ul{
     min-width: 150px;
 }
 
+#top-image-container{
+    max-width: 700px;
+    min-width: 400px;
+    flex: 4;
+    text-align: center;
+}
+
 #top-image{
-    max-width: 500px;
-    width: 55%;
-    min-height: 0%;
-    /* min-width: 300px; */
+    max-width: 100%;
 }
 
 #blue-text{
-    width: 50%;
-    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #blue-text h1{
     font-size: 50px;
+    text-align: center;
 }
 
+#top-button{
+    background-color: #3882F6;
+    color: white;
+    padding: 5px;
+    max-width: 75px;
+    border-radius: 5px;
+    border-style: none;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 5px;
+}
 
-/* WHITE PANEL STYLES */
+/* *************** WHITE PANEL STYLES ****************/
 #white-panel-content{
     display: flex;
     flex-direction: column;
@@ -131,7 +155,7 @@ ul{
 }
 
 
-/* GREY PANEL STYLES  */
+/* *************** GREY PANEL STYLES ***************  */
 #grey-panel{
     background-color: #E5E7EB;
     display: flex;
@@ -159,7 +183,7 @@ ul{
 }
 
 
-/* FOOTER PANEL STYLES */
+/* *************** FOOTER PANEL STYLES *************** */
 #footer-panel{
     /* width: 100%; */
     display: flex;
@@ -180,7 +204,6 @@ ul{
     padding-bottom: 25px;
     padding-left: 25px;
     padding-right: 25px;
-    /* padding-left: 25px; */
 }
 
 #blue-footer-panel p{
