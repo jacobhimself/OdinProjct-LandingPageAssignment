@@ -201,12 +201,13 @@ body{
     border-radius: 10px;
 }
 
-#blue-panel-text{
+#bottom-blue-panel-text{
     color: #F9FAF8;
     display: flex;
     flex-direction: column;
     width: 500px;
     flex-basis: 100%;
+    align-items:flex-start;
 }
 
 #call-to-action{
